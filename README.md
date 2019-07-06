@@ -1,4 +1,8 @@
 # Android-Canvas-Squircle
+
+
+![A set of squircles in a recyclerview](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/squircle_sample.png)
+
 A FULL squircle for the Android Canvas, no tricks. You can customize it and modify it. 
 
 This is a highly requested feature that hasn't been added to Android natively. 
