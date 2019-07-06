@@ -11,4 +11,4 @@ If you find the solution I would highly appreciate it, right now I'm working on 
 Make sure to let me know if you used my code, I'd be excited to see what projects your're using it on!
 And if you'd like to acredit me I would highly apreciate it. 
 
-#A SQUIRCLE IS NOT A ROUNDED SQUARE
+# A SQUIRCLE IS NOT A ROUNDED SQUARE
