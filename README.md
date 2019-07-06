@@ -5,6 +5,12 @@
 
 A FULL squircle for the Android Canvas, no tricks. You can customize it and modify it. 
 
+# Instructions
+
+To get it up and running all you have to do is download the two classes and save them into your project folders, where the Java or Kotlin files are, like regular classes. 
+Once you do that you'll have access to the custom SuperEllipseView on your layout files, like a custom view. 
+Then all you should have to do is replace a few things, like colors and package imports to your preference and needs. 
+
 This is a highly requested feature that hasn't been added to Android natively. 
 After doing some research and looking up some formulas I finally managed to create a squircle. 
 
