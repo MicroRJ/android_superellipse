@@ -12,9 +12,6 @@ import kotlin.math.sin
 
 object SuperEllipsePerformanceCalculations {
 
-//    var superEllipseBitmap: Bitmap? = null
-
-
     private val bitmapForSizes = ArrayList<Pair<Bitmap, Int>>()
 
     fun getBitmap(w: Int, h: Int, p: Int, paint: Paint): Bitmap {
