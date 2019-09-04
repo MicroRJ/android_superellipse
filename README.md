@@ -1,7 +1,8 @@
 # Android-Canvas-Squircle
 
 
-![A set of squircles in a recyclerview](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/squircle_sample.png)
+![A set of squircles](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample1.png)
+![A set of squircles](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample2.png)
 
 A FULL squircle for the Android Canvas, no tricks. You can customize it and modify it. 
 
