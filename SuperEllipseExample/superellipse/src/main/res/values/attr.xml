@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SuperEllipseImageView">
+        <attr name="colorFill" format="color" />
+        <attr name="colorStroke" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="paintStyle" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="stroke" value="1" />
+            <enum name="fillAndStroke" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
