@@ -59,6 +59,7 @@ paintStyle  | you have three options, fill, stroke, fillAndStroke.
 # Upcoming
 Right now you cannot make changes programatically, which also means you cannot update the color in real time, this feature will come in the very near future. 
 
+# Footer 
 Squircles are a highly requested feature that haven't been added to Android natively, so here you have it, plain and simple and efficient. 
 
 Make sure to let me know if you used my code, I'd be excited to see what projects you're using it on!
