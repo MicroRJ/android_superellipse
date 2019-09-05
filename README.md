@@ -13,20 +13,20 @@ Step 1. Add the JitPack repository to your build file
 Add it in your root build.gradle at the end of repositories:
 
 ``` Kotlin
-
 allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-  
+  ```
   
 Step 2. Add the dependency
 
-dependencies {
+``` Kotlin
+	dependencies {
 	        implementation 'com.github.MicroRJ:Android-Canvas-Squircle:1.0'
-}
+	}
 ```
 Squircles are a highly requested feature that hasn't been added to Android natively, so here you have it, plain and simple and efficient. 
 
