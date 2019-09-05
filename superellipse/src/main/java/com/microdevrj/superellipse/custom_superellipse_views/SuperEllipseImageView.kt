@@ -59,6 +59,7 @@ open class SuperEllipseImageView : ImageView {
             }
         }
         strokeColor = t.getInt(SuperEllipseImageView_colorStroke, -1)
+        bitmapPadding = paint.strokeWidth.toInt()
         t.recycle()
     }
 
