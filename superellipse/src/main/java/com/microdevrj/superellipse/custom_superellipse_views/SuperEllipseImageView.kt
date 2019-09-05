@@ -8,13 +8,13 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.widget.ImageView
 import com.microdevrj.superellipse.R.styleable.*
-import com.microdevrj.superellipse.performance.SuperEllipsePerformanceCalculations.getCachedBitmap
+import com.microdevrj.superellipse.performance.SuperellipseLogic.getCachedBitmap
 
 
 /**
  * You can follow this same pattern to implement the squircle background on other views and view-groups
  */
-open class SuperEllipseImageView : ImageView {
+open class SuperellipseImageView : ImageView {
 
     constructor(context: Context) : super(context)
 
@@ -47,18 +47,18 @@ open class SuperEllipseImageView : ImageView {
         if (attrs == null) {
             return
         }
-        val t = context.obtainStyledAttributes(attrs, SuperEllipseImageView)
+        val t = context.obtainStyledAttributes(attrs, SuperellipseImageView)
         paint.apply {
-            color = t.getColor(SuperEllipseImageView_colorFill, Color.WHITE)
-            strokeWidth = t.getDimension(SuperEllipseImageView_strokeWidth, 0F)
-            style = when (t.getInt(SuperEllipseImageView_paintStyle, 0)) {
+            color = t.getColor(SuperellipseImageView_colorFill, Color.WHITE)
+            strokeWidth = t.getDimension(SuperellipseImageView_strokeWidth, 0F)
+            style = when (t.getInt(SuperellipseImageView_paintStyle, 0)) {
                 0 -> Paint.Style.FILL
                 1 -> Paint.Style.STROKE
                 2 -> Paint.Style.FILL_AND_STROKE
                 else -> Paint.Style.FILL
             }
         }
-        strokeColor = t.getInt(SuperEllipseImageView_colorStroke, -1)
+        strokeColor = t.getInt(SuperellipseImageView_colorStroke, -1)
         bitmapPadding = paint.strokeWidth.toInt()
         t.recycle()
     }

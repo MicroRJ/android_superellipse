@@ -17,7 +17,7 @@
         android:textSize="24sp" />
 
 
-    <com.microdevrj.superellipse.custom_superellipse_views.SuperEllipseImageView
+    <com.microdevrj.superellipse.custom_superellipse_views.SuperellipseImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
