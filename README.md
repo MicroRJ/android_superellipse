@@ -43,10 +43,21 @@ Step 2. Add the dependency
 		app:strokeWidth="6dp" />
 
 
-# On your activity onDestroy() method call: 
+# On your activity's onDestroy() method call: 
 
 	SuperEllipsePerformanceCalculations.release()
+	
+# Documentation
 
+
+Property    | Effect
+------------| -------------
+colorFill   | sets the background color of the squircle, different from background property
+strokeWidth | sets the border stroke width 
+paintStyle  | you have three options, fill, stroke, fillAndStroke. 
+
+# Upcoming
+Right now you cannot make changes programatically, which also means you cannot update the color in real time, this feature will come in the very near future. 
 
 Squircles are a highly requested feature that haven't been added to Android natively, so here you have it, plain and simple and efficient. 
 
