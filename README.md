@@ -25,14 +25,15 @@ Step 2. Add the dependency
 
 
 	dependencies {
-		implementation 'com.github.MicroRJ:Android-Canvas-Squircle:2.0'
+		implementation 'com.github.MicroRJ:android_superellipse:2.0'
+		//Or latest release version
 	}
 
 
 
 # Example
 
-	 <com.microdevrj.superellipse.custom_superellipse_views.SuperEllipseImageView
+	 <com.microdevrj.superellipse.custom_superellipse_views.SuperellipseImageView
 		android:layout_width="200dp"
 		android:layout_height="200dp"
 		android:layout_gravity="center"
