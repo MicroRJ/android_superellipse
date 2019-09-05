@@ -43,6 +43,10 @@ Step 2. Add the dependency
 		app:strokeWidth="6dp" />
 
 
+# On your activity onDestroy() method call: 
+
+	SuperEllipsePerformanceCalculations.release()
+
 
 Squircles are a highly requested feature that haven't been added to Android natively, so here you have it, plain and simple and efficient. 
 
