@@ -47,6 +47,7 @@ Step 2. Add the dependency
 
 	SuperEllipsePerformanceCalculations.release()
 	
+	
 # Documentation
 
 
@@ -56,8 +57,29 @@ colorFill   | sets the background color of the squircle, different from backgrou
 strokeWidth | sets the border stroke width 
 paintStyle  | you have three options, fill, stroke, fillAndStroke. 
 
-# Upcoming
-Right now you cannot make changes programatically, which also means you cannot update the color in real time, this feature will come in the very near future. 
+
+
+# How does it work? 
+There are two main components, actullay only two, the logic and the view that implements it. 
+Every time the SuperEllipseImageView requests a squircle an algorithm will decide whether or not the view needs a NEW bitmap or a CACHED one based on the the view's needs, such as size and color, (for now), this allows for the same bitmap to be reused as many times as seen fit by the algorithm.
+If there's a bitmap request and there are no cached bitmaps that fit the view's needs a new bitmap will be created and cached. 
+
+# In what cases is this particularly useful? 
+This is very useful especially in cases where you use this custom view several times, like in a recycler view or list view, or anything else that involves repetition. Doing it this way you increase performance drastically. 
+
+# What are the current limitations? 
+* No live updates. 
+* It uses bitmaps tailored to the view's size, which means that when scaled up quality will not be preserved. 
+* Although not a big problem, theoretically you could end up with a high amount of cached bitmaps due to the way the algorithm works, this is something that will be accounted for in a future update, but it's not a problem at all unless you have a LOT of unique squircles.
+ 
+*Note that these limitations will be taken care of in a future update. 
+
+Disclaimer
+This was never intended to be a library, but rather a specific need for my app. In the future, more features will be added that will fit your specific needs. 
+
+
+
+
 
 # Footer 
 Squircles are a highly requested feature that haven't been added to Android natively, so here you have it, plain and simple and efficient. 
