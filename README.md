@@ -25,7 +25,7 @@ Step 2. Add the dependency
 
 
 	dependencies {
-		implementation 'com.github.MicroRJ:Android-Canvas-Squircle:1.0'
+		implementation 'com.github.MicroRJ:Android-Canvas-Squircle:2.0'
 	}
 
 
