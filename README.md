@@ -46,7 +46,7 @@ Step 2. Add the dependency
 
 # On your activity's onDestroy() method call: 
 
-	SuperEllipsePerformanceCalculations.release()
+	SuperellipsePerformanceCalculations.release()
 	
 	
 # Documentation
