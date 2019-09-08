@@ -55,6 +55,7 @@ Step 2. Add the dependency
 Property    | Effect
 ------------| -------------
 colorFill   | sets the background color of the squircle, different from background property
+colorStroke | sets the color of the stroke
 strokeWidth | sets the border stroke width 
 paintStyle  | you have three options, fill, stroke, fillAndStroke. 
 
