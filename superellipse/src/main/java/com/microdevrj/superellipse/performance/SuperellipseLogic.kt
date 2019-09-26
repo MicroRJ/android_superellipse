@@ -91,7 +91,7 @@ object SuperellipseLogic {
     }
 
 
-    private fun getSuperEllipsePath(
+    fun getSuperEllipsePath(
         radX: Int,
         radY: Int,
         corners: Double = DEF_CORNERS_CONSTANT
