@@ -47,9 +47,9 @@ object SuperellipseLogic {
     /**
      * @param w width of the bitmap.
      * @param h height of the bitmap.
-     * @param strkClr color of the stroke (only applies if Paint.style == STROKE || STROKE_AND_FILL)
-     * @param pddng bitmap pddng (this will not off-center the bitmap).
-     * @param pnt pnt to use for drawing the bitmap.
+     * @param strokeColor color of the stroke (only applies if Paint.style == STROKE || STROKE_AND_FILL)
+     * @param padding bitmap padding (this will not off-center the bitmap).
+     * @param paint paint to use for drawing the bitmap.
      * If canvas not centered, center it.
      * Create drawing bitmap.
      * Draw squircle path on bitmap.
@@ -58,56 +58,72 @@ object SuperellipseLogic {
     private fun getSquircleBitmapBackground(
         w: Int,
         h: Int,
-        pddng: Int,
-        pnt: Paint,
-        strkClr: Int
+        padding: Int,
+        paint: Paint,
+        strokeColor: Int
     ): Bitmap {
         val b = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
 
         this.canvas.setBitmap(b)
         this.canvas.translate(w / 2f, h / 2f)
 
-        recalculatePath((w / 2) - pddng, (h / 2) - pddng)
+        recalculatePath((w / 2) - padding, (h / 2) - padding)
 
 
-        val ogStl = pnt.style
-        val ogClr = pnt.color
+        val ogStl = paint.style
+        val ogClr = paint.color
 
         if (ogStl == FILL || ogStl == FILL_AND_STROKE) {
-            canvas.drawPath(path, pnt)
+            canvas.drawPath(path, paint)
         }
         if (ogStl == STROKE || ogStl == FILL_AND_STROKE) {
 
-            pnt.color = strkClr
-            pnt.style = STROKE
+            paint.color = strokeColor
+            paint.style = STROKE
 
-            canvas.drawPath(path, pnt)
+            canvas.drawPath(path, paint)
             //Reassign values to not interfere with objects og values
-            pnt.style = ogStl
-            pnt.color = ogClr
+            paint.style = ogStl
+            paint.color = ogClr
         }
 
         return b
     }
 
 
-    private fun recalculatePath(radX: Int, radY: Int) {
+    private fun getSuperEllipsePath(
+        radX: Int,
+        radY: Int,
+        corners: Double = DEF_CORNERS_CONSTANT
+    ): Path {
+        val newPath = Path()
+        addSuperEllipseToPath(newPath, radX, radY, corners)
+        return newPath
+    }
+
+    private fun addSuperEllipseToPath(p: Path, radX: Int, radY: Int, corners: Double) {
         var l = 0.0
         var angle: Double
-        path.reset()
         for (i in 0 until 360) {
             angle = Math.toRadians(l)
-            val x = getX(radX, angle, DEF_CORNERS_CONSTANT)
-            val y = getY(radY, angle, DEF_CORNERS_CONSTANT)
+            val x = getX(radX, angle, corners)
+            val y = getY(radY, angle, corners)
             if (i == 0) {
-                path.moveTo(x, y)
+                p.moveTo(x, y)
             }
             l++
             angle = Math.toRadians(l)
-            val x2 = getX(radX, angle, DEF_CORNERS_CONSTANT)
-            val y2 = getY(radY, angle, DEF_CORNERS_CONSTANT)
-            path.lineTo(x2, y2)
+            val x2 = getX(radX, angle, corners)
+            val y2 = getY(radY, angle, corners)
+            p.lineTo(x2, y2)
         }
+        p.close()
+    }
+
+
+    private fun recalculatePath(radX: Int, radY: Int, corners: Double = DEF_CORNERS_CONSTANT) {
+        path.reset()
+        addSuperEllipseToPath(path, radX, radY, corners)
         path.close()
     }
 

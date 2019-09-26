@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
+        android:fontFamily="@font/m_b"
         android:padding="24dp"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/colorStroke"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        tools:targetApi="jelly_bean" />
 
 
     <com.microdevrj.superellipse.custom_superellipse_views.SuperellipseImageView
