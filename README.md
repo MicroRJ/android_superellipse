@@ -21,7 +21,7 @@ Step 2. Add the dependency
 
     dependencies
     {
-    implementation 'com.github.MicroRJ:android_superellipse:3.0.0-alpha'
+      implementation 'com.github.MicroRJ:android_superellipse:3.0.0-alpha'
     }
 
 ![Example Image](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample3.png)
