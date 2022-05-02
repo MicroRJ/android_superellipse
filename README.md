@@ -9,6 +9,7 @@ An extremely simple Squircle renderer for the Android canvas.
 
 Step 1. Add Jitpack to your gradle script.
 
+```groovy
       allprojects
       {
         repositories
@@ -16,19 +17,21 @@ Step 1. Add Jitpack to your gradle script.
           maven { url 'https://jitpack.io' }
         }
       }
-
+```
 Step 2. Add the dependency
 
+```groovy
     dependencies
     {
       implementation 'com.github.MicroRJ:android_superellipse:3.0.0-alpha'
     }
-
+```
 
 # Example
 
 ![Example Image](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample3.png)
 
+```xml
     <com.devrj.superellipse.SuperEllipseImageView
         android:layout_width="256dp"
         android:layout_height="256dp"
@@ -40,10 +43,9 @@ Step 2. Add the dependency
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+```
 
-
-
-# Documentation
+# Reference Sheet
 Attribute                       | Effect
 --------------------------------|------------------------
 shapeBackgroundColor: Color     | Set the background color of the shape.
