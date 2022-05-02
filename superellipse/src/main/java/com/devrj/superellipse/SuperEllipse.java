@@ -132,8 +132,8 @@ public final class SuperEllipse
     }
   }
   /** NOTE(RJ):
-   *  ; Create a cacheable rune! A rune has a Curve which describes its path.
-   *  ; Cached runes are and must be in unit space, meaning its Curve::r is equivalent to
+   *  ; Create a cacheable Rune! A Rune has a Curve which describes its path.
+   *  ; Parent runes are typically in unit space, meaning its Curve::r is equivalent to
    *  ; [a, b*r] where [a] and [b] are in unit space, 0.f - 1.f.
    *  ; This allows for derived runes to preserve identity.
    */
@@ -143,6 +143,8 @@ public final class SuperEllipse
     // NOTE(RJ):
     // ; Since we store a path, there's no need to add extra arguments to the
     // ; hash-key.
+    // ; TODO(RJ):
+    // ; - To be removed!
     public static String getHashKey(Curve curve)
     { return Curve.getHashKey(curve);
     }
@@ -154,7 +156,7 @@ public final class SuperEllipse
      */
     public Path p;
     /** NOTE(RJ):
-     * ; The basis!
+     * ; The curve!
      */
     public final Curve b;
     

@@ -2,20 +2,14 @@ package com.devrj.superellipse;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static com.devrj.superellipse.SuperEllipse.Shape.SQUIRCLE;
-import static com.devrj.superellipse.SuperEllipse.debugTimed;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Path;
 import android.util.AttributeSet;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
-
-import com.devrj.superellipse.SuperEllipse.Rune;
 
 /** TODO(RJ):
  *  - Glyph caching!
@@ -47,7 +41,10 @@ public class SuperEllipseImageView extends AppCompatImageView
   public float shapeCurveFactor;
   public float shapeRadius;
   public float shapeScale;
-
+  
+  public void setShapeBackgroundColor(int backgroundColor)
+  { this.shapeBackgroundColor = backgroundColor;
+  }
   public void setShapeForegroundColor(int foregroundColor)
   { this.shapeForegroundColor = foregroundColor;
   }
@@ -58,10 +55,10 @@ public class SuperEllipseImageView extends AppCompatImageView
   { this.shapeCurveFactor = curveFactor;
   }
   public void setShapeRadius(float shapeRadius)
-  { this.shapeCurveFactor = shapeRadius;
+  { this.shapeRadius = shapeRadius;
   }
   public void setShapeScale(float shapeScale)
-  { this.shapeCurveFactor = shapeScale;
+  { this.shapeScale = shapeScale;
   }
   public void resetShape()
   { shapeBackgroundColor = 0xFFEEEEEE;

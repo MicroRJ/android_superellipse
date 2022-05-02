@@ -10,6 +10,7 @@
     <com.devrj.superellipse.SuperEllipseImageView
         android:layout_width="256dp"
         android:layout_height="256dp"
+        android:id="@+id/superView"
         android:padding="24dp"
         app:shapeScale="1.0"
         app:shapeCurveFactor="4"
