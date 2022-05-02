@@ -47,7 +47,7 @@ Step 2. Add the dependency
 
 # Reference Sheet
 XML                             | JAVA                                                 | Effect
---------------------------------|---------------------------------------------------------------------------
+--------------------------------|------------------------------------------------------|--------------------
 shapeBackgroundColor: Color     | SuperEllipseImageView::setShapeBackgroundColor(int)  | Set the background color of the shape.
 shapeForegroundColor: Color     | SuperEllipseImageView::setShapeForegroundColor(int)  | Set the foreground color of the shape. (The border color)
 shapeBorderWidth: Dimension     | SuperEllipseImageView::setShapeBorderWidth(float)    | Set the border width of the shape.
