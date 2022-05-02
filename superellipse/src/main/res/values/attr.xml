@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SuperEllipseImageView">
+        <attr name="shapeBackgroundColor" format="color" />
+        <attr name="shapeForegroundColor" format="color" />
+        <attr name="shapeBorderWidth" format="dimension" />
+        <attr name="shapeCurveFactor" format="float" />
+        <attr name="shapeRadius" format="dimension" />
+        <attr name="shapeScale" format="float" />
+    </declare-styleable>
+</resources>
