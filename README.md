@@ -46,14 +46,14 @@ Step 2. Add the dependency
 ```
 
 # Reference Sheet
-XML                             | JAVA                                                 | Effect
---------------------------------|------------------------------------------------------|--------------------
-shapeBackgroundColor: Color     | SuperEllipseImageView::setShapeBackgroundColor(int)  | Set the background color of the shape.
-shapeForegroundColor: Color     | SuperEllipseImageView::setShapeForegroundColor(int)  | Set the foreground color of the shape. (The border color)
-shapeBorderWidth: Dimension     | SuperEllipseImageView::setShapeBorderWidth(float)    | Set the border width of the shape.
-shapeCurveFactor: Float         | SuperEllipseImageView::setShapeCurveFactor(float)    | Set the curve factor of the shape.
-shapeRadius: Dimension          | SuperEllipseImageView::setShapeRadius(float)         | Set the radius of the shape.
-shapeScale: Float               | SuperEllipseImageView::setShapeScale(float)          | Set the scale of the shape.
+XML                             | JAVA                          | Effect
+--------------------------------|-------------------------------|--------------------
+shapeBackgroundColor            | setShapeBackgroundColor(int)  | Set the background color of the shape.
+shapeForegroundColor            | setShapeForegroundColor(int)  | Set the foreground color of the shape. (The border color)
+shapeBorderWidth                | setShapeBorderWidth(float)    | Set the border width of the shape.
+shapeCurveFactor                | setShapeCurveFactor(float)    | Set the curve factor of the shape.
+shapeRadius                     | setShapeRadius(float)         | Set the radius of the shape.
+shapeScale                      | setShapeScale(float)          | Set the scale of the shape.
 
 # Footer
 Get yourself some squircles.
