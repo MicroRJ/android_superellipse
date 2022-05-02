@@ -24,9 +24,10 @@ Step 2. Add the dependency
       implementation 'com.github.MicroRJ:android_superellipse:3.0.0-alpha'
     }
 
-![Example Image](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample3.png)
 
 # Example
+
+![Example Image](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample3.png)
 
     <com.devrj.superellipse.SuperEllipseImageView
         android:layout_width="256dp"
