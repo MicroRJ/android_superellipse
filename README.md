@@ -23,7 +23,7 @@ Step 2. Add the dependency
 ```groovy
     dependencies
     {
-      implementation 'com.github.MicroRJ:android_superellipse:3.0.0-alpha'
+      implementation 'com.github.MicroRJ:android_superellipse:v3.0.0-alpha'
     }
 ```
 
