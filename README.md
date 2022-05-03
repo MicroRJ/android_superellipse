@@ -1,5 +1,7 @@
 # Android-SuperEllipse
 
+[![](https://jitpack.io/v/MicroRJ/android_superellipse.svg)](https://jitpack.io/#MicroRJ/android_superellipse)
+
 ![A set of squircles](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample1.png)
 ![A set of squircles](https://github.com/MicroRJ/Android-Canvas-Squircle/blob/master/s_sample2.png)
 
@@ -27,7 +29,7 @@ Step 2. Add the dependency
 ```groovy
     dependencies
     {
-      implementation 'com.github.MicroRJ:android_superellipse:v3.0.0-alpha'
+      implementation 'com.github.MicroRJ:android_superellipse:v3.0.1-alpha'
     }
 ```
 
