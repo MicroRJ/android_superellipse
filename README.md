@@ -6,7 +6,9 @@
 An extremely simple Squircle renderer for the Android canvas.
 
 # Instructions
-
+You can find instructions at:
+https://jitpack.io/#MicroRJ/android_superellipse
+Or:
 Step 1. Add Jitpack to your gradle script.
 
 ```groovy
@@ -26,6 +28,7 @@ Step 2. Add the dependency
       implementation 'com.github.MicroRJ:android_superellipse:v3.0.0-alpha'
     }
 ```
+
 
 # Example
 
